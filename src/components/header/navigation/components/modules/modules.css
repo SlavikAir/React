@@ -1,0 +1,20 @@
+
+.nav-link {
+    font-size: 20px;
+    text-decoration: none;
+    color: rgb(80, 77, 77);     
+    font-weight:700;
+}
+.nav-link:hover {
+    color: rgb(105, 67, 17);
+}
+
+.offer-link {
+    font-size: 20px;
+    text-decoration: none;
+    font-weight:500;
+    color: rgb(80, 77, 77);
+}
+.offer-link:hover {
+    color: rgb(105, 67, 17);
+}

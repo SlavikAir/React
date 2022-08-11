@@ -1,0 +1,17 @@
+.right-item {
+    max-width: 500px;
+
+}
+
+.left-item {
+    margin-left: 250px;
+    max-width: 500px;
+}
+.item_p {
+    display: block;
+    color: white;
+    font-size: 20px;
+    border: 2px solid white;
+    border-radius: 10px;
+    background-color: rgba(122, 120, 120, 0.5);
+}

@@ -1,0 +1,9 @@
+
+.delivery {
+    margin: 20px 0;
+}
+.delivery-items {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}

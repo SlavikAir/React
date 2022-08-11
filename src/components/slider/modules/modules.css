@@ -1,0 +1,30 @@
+
+.slider-title {
+    position: absolute;
+    z-index: 2;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 80%;
+    margin: 0;
+    color: white;
+    font-size: 35px;
+}
+
+.indikator-block {
+    position: absolute;
+    z-index: 2;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 90%;
+    display: flex;
+}
+
+.indikator {
+    margin: 10px;
+    width: 50px;
+    border: 2px solid black;
+}
+
+.back-act {
+    background-color: black ;
+}

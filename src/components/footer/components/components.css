@@ -1,0 +1,19 @@
+
+
+.numbers {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.numbers-item {
+    font-size: 20px;
+    color: rgb(105, 67, 17);
+    font-weight:500;
+
+}
+.numbers-item:hover {
+    color: rgb(189, 62, 30);
+}
+.information {
+    display: flex;
+}

@@ -1,0 +1,14 @@
+
+.feedback {
+    background-image: url("./../../feedbackImg/feetBack.jpg");
+    background-size: cover;
+    min-height: 800px;
+    position: relative;
+}
+.feedback-items {
+    position: absolute;
+    top: 0;
+    left: 55%;
+    margin: 20px 0;
+
+}
