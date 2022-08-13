@@ -1,0 +1,49 @@
+.modal-wrapper {
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    background: rgba(68, 59, 59, 0.438);
+    backdrop-filter: blur(10px);
+  
+  }
+  .modal-content {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    pointer-events: auto;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid rgba(0,0,0,.2);
+    border-radius: 1rem;
+    outline: 0
+  }
+  .modal-dialog {
+    max-width: 500px;
+    margin: 1.75rem auto;
+  }
+  .modal-body {
+    position: relative;
+    flex: 1 1 auto;
+    padding: 1rem;
+  }
+  .modal-close {
+   position: relative;
+   left: 90%;
+   font-weight:900;
+  }
+
+  .open {
+    height: 100%;
+    display: block;
+    z-index: 2;
+  }
+  .close {
+    display: none;
+  } 
+
+  .close-button {
+    position: absolute;
+    left: 85%;
+    background-color: rgba(184, 127, 5, 0.788);
+  }

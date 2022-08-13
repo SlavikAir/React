@@ -10,20 +10,19 @@ const Slider = () => {
     const [index, setIndex] = useState();
 
 
-    console.log (count)
+   
 
     useEffect ( () => {
         if( !index ) {
             const intervalIndex = setInterval(() => {
-              
                 setCount( (count) =>  {
                     if (count === sliderImg.length - 1) {
                         return 0
                      } else {
-                        return + 1 
+                        return +1
                      }
                 })
-            }, 5000)
+            }, 3000)
             setIndex(intervalIndex)
         }
         return ()=> clearInterval(index)

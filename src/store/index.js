@@ -1,7 +1,9 @@
 import { createStore, combineReducers } from 'redux';
-import cashReducer from './redusers/cashReduser';
-import customerReducer from './redusers/ccustomerReduser';
 import { composeWithDevTools } from 'redux-devtools-extension';
+import cashReducer from './reducers/cashReducer';
+import firstCoursesReducer from './reducers/firstCoursesReducer';
+import meatReducer from './reducers/meatReducer';
+import saladsReducer from './reducers/saladsReducer';
 
 // npm i redux react-redux  
 // npm install --save redux-devtools-extension  // инструмент разроботчика
@@ -9,7 +11,9 @@ import { composeWithDevTools } from 'redux-devtools-extension';
 
 const rootReducer = combineReducers( { // комбайн редусер принемает в себя обект состоящий из редусеров
     cash:cashReducer,                   // каждый редусер под своим ключем
-    customer:customerReducer,           // каждый ключь это место в стейте 
+    firstCourses:firstCoursesReducer,   // каждый ключь это место в стейте 
+    salads:saladsReducer,   
+    meat:meatReducer,                                       
 })
 
 

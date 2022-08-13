@@ -1,13 +1,15 @@
 import Footer from "./components/footer";
 import Header from "./components/header";
 import SiteName from "./components/siteName";
-import Main from "./components/main";
 import "./index.css";
 import Banner from "./components/banner";
 import Delivery from "./components/delivery";
 import Feedback from "./components/feedback";
 import {Routes, Route} from "react-router-dom"
 import Slider from "./components/slider";
+import FirstCourses from "./components/categories/FirstCourses";
+import Salads from "./components/categories/Salads";
+import Meat from "./components/categories/Meat";
 
 const App = ()=> {
   return (
@@ -16,8 +18,10 @@ const App = ()=> {
         <Header />
         <SiteName />
         <Routes>
-          <Route path="/" exact element={<Banner />} />
-          <Route path="/categories" element={<Main />} />
+          <Route path="/"   element={<Banner />} />
+          <Route path="/firstCourses" element={<FirstCourses />} />
+          <Route path="/salads" element={<Salads/>} />
+          <Route path="/meat" element={<Meat/>} />
         </Routes>
         <Delivery />
         <Slider />

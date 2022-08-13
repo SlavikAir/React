@@ -1,13 +1,15 @@
+import Menu from './components/Menu';
 import NavInfo from './components/NavInfo';
 import NavOffer from './components/NavOffer';
 import './navigation.css';
 
 
-const Navigation = ()=> {
-    return(
+const Navigation = () => {
+    return (
         <nav className="navigation">
             <NavInfo />
-            <NavOffer />    
+            <Menu />
+            <NavOffer />
         </nav>
     )
 }
