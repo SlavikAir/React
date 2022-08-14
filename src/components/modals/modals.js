@@ -7,7 +7,7 @@ const Modal = (props) => {
             <div className="modal-dialog modal-width">
                 <div className="modal-content">
                     <div className='modal-body '>
-                    <MyButton style='close-button' onClick={props.ModalClose} name="X"/>
+                    <MyButton styleName='close-button' onClick={props.ModalClose} name="X"/>
                         {props.header}
                         {props.body}
                         {props.footer}

@@ -4,6 +4,7 @@ import './modalBody.css'
 
 
 
+
 export const LoginHeader = ()=> {
     return (
         <div className="login-header">
@@ -26,7 +27,7 @@ export const LoginBody = ()=> {
             </div>
         </div>
         <div className="buttom-block">
-            <MyButton style='login-button-color' name="Увійти"/>
+            <MyButton styleName='login-button-color' name="Увійти"/>
             <MyButton name="Зареєструватися"/>
         </div>
         </>

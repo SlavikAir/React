@@ -6,10 +6,10 @@ const NavOffer = ()=> {
             <OfferItem road="/firstCourses" name="ПЕРШІ СТРАВИ" />
             <OfferItem road="/salads" name="САЛАТИ" />
             <OfferItem road="/meat" name="М’ЯСО" />
-            <OfferItem road="" name="РИБА" />
-            <OfferItem road="" name="ГАРНІРИ" />
-            <OfferItem road="" name="СОУСИ" />
-            <OfferItem road="" name="НАПОЇ" />
+            <OfferItem road="/fish" name="РИБА" />
+            <OfferItem road="sideDishes" name="ГАРНІРИ" />
+            <OfferItem road="/sauce" name="СОУСИ" />
+            <OfferItem road="/drinks" name="НАПОЇ" />
         </div>
     )
 }

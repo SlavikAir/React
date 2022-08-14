@@ -10,6 +10,12 @@ import Slider from "./components/slider";
 import FirstCourses from "./components/categories/FirstCourses";
 import Salads from "./components/categories/Salads";
 import Meat from "./components/categories/Meat";
+import About from "./components/navigation/About";
+import Location from "./components/navigation/Location";
+import Fish from "./components/categories/Fish";
+import SideDishes from "./components/categories/SideDishes";
+import Sauce from "./components/categories/Sauce";
+import Drinks from "./components/categories/Drinks";
 
 const App = ()=> {
   return (
@@ -22,6 +28,12 @@ const App = ()=> {
           <Route path="/firstCourses" element={<FirstCourses />} />
           <Route path="/salads" element={<Salads/>} />
           <Route path="/meat" element={<Meat/>} />
+          <Route path="/about" element={<About />} />
+          <Route path="/location" element={<Location />} />
+          <Route path="/fish" element={<Fish />} />
+          <Route path="/sideDishes" element={<SideDishes />} />
+          <Route path="/sauce" element={<Sauce/>} />
+          <Route path="/drinks" element={<Drinks/>} />
         </Routes>
         <Delivery />
         <Slider />

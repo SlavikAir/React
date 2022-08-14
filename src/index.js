@@ -12,6 +12,8 @@ import { Provider } from 'react-redux'; // Провайдер нужен для 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 // пораметром в Provider передаем store он будит в кампоненты прокидывать неше состояние
 
+console.log(store.getState())
+
 root.render(
   <Provider store={store}>
     <React.StrictMode>
