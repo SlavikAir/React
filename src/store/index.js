@@ -1,9 +1,12 @@
 import { createStore, combineReducers } from 'redux';
 import { composeWithDevTools } from 'redux-devtools-extension';
+import basketReducer from './reducers/basketReducer';
 import cashReducer from './reducers/cashReducer';
+import customerReducer from './reducers/customerReducer';
 import drinksReducer from './reducers/drinksReducer';
 import firstCoursesReducer from './reducers/firstCoursesReducer';
 import fishReducer from './reducers/fishReducer';
+import loginReducer from './reducers/loginReducer';
 import meatReducer from './reducers/meatReducer';
 import saladsReducer from './reducers/saladsReducer';
 import sauceReducer from './reducers/sauceReducer';
@@ -21,7 +24,10 @@ const rootReducer = combineReducers( { // комбайн редусер прин
     fish:fishReducer,
     side:saidDishesReducer,
     sauce:sauceReducer,
-    drinks:drinksReducer
+    drinks:drinksReducer,
+    customer:customerReducer,
+    login:loginReducer,
+    basket:basketReducer,
                                           
 })
 

@@ -1,8 +1,8 @@
 
 
-const MyInput = ({name,...props})=> {
+const MyInput = ({name, onChange, value, ...props})=> {
     return (
-        <input className="my-input"></input>
+        <input {...props} className="my-input" value={value} onChange={onChange}></input>
     )
 }
 

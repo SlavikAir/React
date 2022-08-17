@@ -22,7 +22,7 @@ const Slider = () => {
                         return +1
                      }
                 })
-            }, 3000)
+            }, 2000)
             setIndex(intervalIndex)
         }
         return ()=> clearInterval(index)

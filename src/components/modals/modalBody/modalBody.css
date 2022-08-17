@@ -8,3 +8,16 @@
 .login-button-color {
     background-color: rgba(184, 127, 5, 0.788);
 }
+.basket-item {
+    margin-bottom: 5px ;
+    display: grid;
+    grid-gap: 5px;
+    grid-template-columns: 200px 100px 50px 50px;
+}
+.footer--items {
+    display: flex;
+    justify-content: space-between;
+}
+.basket-item--text {
+
+}
