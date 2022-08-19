@@ -9,11 +9,11 @@ const BasketItem = ({props:{id,name,price}}) => {
 
     let dispatch = useDispatch();
 
-    let good = {id,name,price}
+    let good = {id,name,price} // для передаче в редусер
 
     const deleteGoods = () => {
 
-        dispatch({ type: "DELETE", good})
+        dispatch({ type: "DELETE", good}) // передаем весь товар так как редусер принемает товар
     }
 
 
