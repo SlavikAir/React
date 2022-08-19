@@ -14,7 +14,7 @@ export const BasketHeader = () => {
 
     return (
         <div className="login-header">
-            <h2>Вітаю у вашему кошеку</h2>
+            <h2>Вітаю у вашему кошику</h2>
         </div>
     )
 }
@@ -23,23 +23,33 @@ export const BasketBody = () => {
 
     const item = useSelector(state => Object.keys(state.basket).map(el => { return { id: el, ...state.basket[el] } }))
 
+
     return (
         <>
-            {item.map(el => <BasketItem key={el.id} props={el} />)}
+            {item.length > 0 ?
+                <>
+                    {item.map(el => <BasketItem key={el.id} props={el} />)}
+                </>
+                :
+                <span>кошик порожній</span>
+            }
+
         </>
     )
 }
 export const BasketFooter = () => {
 
+    
+
     let dispatch = useDispatch();
-    let hendClean = ()=> dispatch({type:"CLEAN"})
+    let handClean = () => dispatch({ type: "CLEAN" })
 
     return (
         <div className="login-footer">
             <hr />
             <div className='footer--items'>
                 <p>Раді бачити вас ще </p>
-                <MyButton name="Выдалити" onClick={hendClean}/>
+                <MyButton name="Выдалити" onClick={handClean} />
             </div>
         </div>
     )

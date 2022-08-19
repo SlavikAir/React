@@ -1,15 +1,21 @@
 import { useState } from "react"
-import { useDispatch } from "react-redux/es/hooks/useDispatch";
 import "./modalBody.css"
+import { useDispatch } from "react-redux"
 
 
-const BasketItem = ({props:{id,name,price,}}) => {
+const BasketItem = ({props:{id,name,price}}) => {
 
     const [count, setCount] = useState(1)
 
     let dispatch = useDispatch();
 
-    let handDelete = ()=> dispatch({type:"DELETE",id})
+    let good = {id,name,price}
+
+    const deleteGoods = () => {
+
+        dispatch({ type: "DELETE", good})
+    }
+
 
     return (
         <div className="basket-item">
@@ -19,7 +25,7 @@ const BasketItem = ({props:{id,name,price,}}) => {
                             type="number" 
                             value={count} 
                             onChange={(e)=>setCount(e.target.value)}/>
-            <button onClick={handDelete}>delete</button>
+            <button onClick={deleteGoods}>delete</button>
         </div>
     )
 }

@@ -19,7 +19,7 @@ const Slider = () => {
                     if (count === sliderImg.length - 1) {
                         return 0
                      } else {
-                        return +1
+                        return  +1
                      }
                 })
             }, 2000)
