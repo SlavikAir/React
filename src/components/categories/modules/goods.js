@@ -7,10 +7,10 @@ import "./modules.css";
 const Goods = ({ props: { id, name, price, img, description } }) => {
 
     let dispatch = useDispatch();
-  
 
-    let addBasket = ()=> dispatch({type:"ADD_BASKET",good:{name,price,id}})
-    
+
+    let addBasket = () => dispatch({ type: "ADD_BASKET", good: { name, price, id } })
+
     console.log()
     return (
         <div className="goods">

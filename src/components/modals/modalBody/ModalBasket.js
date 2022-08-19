@@ -39,7 +39,7 @@ export const BasketBody = () => {
 }
 export const BasketFooter = () => {
 
-    
+
 
     let dispatch = useDispatch();
     let handClean = () => dispatch({ type: "CLEAN" })
